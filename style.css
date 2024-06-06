@@ -1,0 +1,64 @@
+body{ 
+    background-image: url(images/fruitsa\ and\ vegetables\ image\ \(3\).webp);
+    background-repeat: no-repeat;
+    /* background-size: ; */
+    /* height: 100%;
+    width: 100%; */
+    background-size:cover;
+    /* height: 100vh; */
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+#content{
+        background-color: #d48e3e;  
+        height: 850px; 
+        width: 900px; 
+        border-radius: 60px;
+        margin-top: 1.5%;
+        position: absolute;
+        z-index: 2;
+        padding: 10px 70px;
+        margin: 30px 400px;
+        display: flex;
+        flex-direction: column;
+        /* max-height: 100%; */
+
+}
+.header{
+    display: flex;
+    gap: 100px;
+}
+textarea{
+    margin-left: 150px;
+    border: solid 2px;
+    border-radius: 20px;
+
+}
+h1{
+    font-size: 40px;
+    margin-top: 6%;
+}
+button{
+    border-radius: 30px;
+    height: 7%;
+    width: 20%;
+    font-size: 25px;
+    margin-left: 40%;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #94503D;
+    color: white;
+    border: none;
+}
+::placeholder{
+    text-align: center;
+}

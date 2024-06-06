@@ -1,5 +1,5 @@
 body{ 
-    background-image: url(images/fruitsa\ and\ vegetables\ image\ \(3\).webp);
+    background-image: url("images/_____BACKGROUND.jpg");
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -9,7 +9,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(28, 27, 27, 0.7);
     z-index: 1;
     height: 100%;
     width: 100%;
@@ -76,3 +76,63 @@ th {
     flex: 1;
     overflow: auto;
     }
+    
+     .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+   
+}
+.text span {
+    color: #F6A224;
+}
+
+.text p{
+font-size: xx-large;
+color: white;
+font-weight: bolder;
+}   
+.text{
+margin-top: 300px;
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0, 0.4); 
+color: white;
+font-weight: bold;
+position: absolute;
+transform: translate(-60%, -25%);
+z-index: 2;
+width: 400px;
+height: 200px;
+padding: 20px;
+text-align: center;
+
+}
+
+.logo{
+margin-top: 250px;
+margin-top: 150px;
+margin-left: 650px;
+}
+
+a{
+text-decoration: none;
+color:white;
+font-weight: bold;
+text-align: center;
+width: 200px; 
+height: 50px;  
+padding: 18px 10px;
+background-color: #94503d;
+border: none;
+font-size:20px;
+border-radius: 20px;
+margin-left: 800px;
+} 
+.landingpage{
+background-size:cover;
+height: 963px; 
+object-fit: cover;
+background-repeat: no-repeat;
+background-image: url("images/_____BACKGROUND.jpg")  
+}

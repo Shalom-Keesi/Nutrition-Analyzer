@@ -146,12 +146,13 @@ tr{
 /* } */ 
 #btn{
     /* justify-content: center; */
-    margin-top: 200px;
-    margin-left: 400px;
+    margin-top: 600px;
+    margin-left: 750px;
     
     
     
 }
+
 a{
     text-decoration: none;
     color: white;
@@ -159,17 +160,29 @@ a{
 
 }
 
+
+
 @media screen and (min-width:280px) and (max-width:480px){
-    body {
-        background-image: url("images/_____BACKGROUND.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 610px;
-        width: 90%;
-      }
+
+  body {
+    background-image: url("/images/pancakesandStrawberries.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 650px;
+    background-position: center;
+    /* background-color: rgba(112, 90, 90, 0.2); */
+  }
+   
+
+
+
+  
    
       #content {
-        background-color: #d48e3e;
+
+        
+        /* background-color: #d48e3e; */
         /* height: 850px; 
               width: 900px;  */
         border-radius: 60px;
@@ -177,20 +190,23 @@ a{
         position: absolute;
         z-index: 2;
         padding: 10px 70px;
-        margin: 30px 400px;
+        margin: 0px 0px;
         display: flex;
         flex-direction: column;
-        width: 900px;
-        height: 850px;
+        width: 50%;
+        height: 700px;
       }
       .header {
         display: flex;
         gap: 100px;
       }
       textarea {
-        margin-left: 150px;
+        margin-left: 0px;
         border: solid 2px;
         border-radius: 20px;
+        width: 100%;
+        height: 100%;
+
       }
       h1 {
         font-size: 40px;
@@ -198,7 +214,7 @@ a{
       }
       button {
         border-radius: 30px;
-        font-size: small;
+        font-size: large;
         margin-top: 0px;
         text-align: center;
         background-color: #94503d;
@@ -206,15 +222,15 @@ a{
         border: none;
         padding: 0px 0px;
         width: 200px;
-        margin-top: 400px;
-        height: 50px;
+        margin-top: 200px;
+        height: 90px;
         align-self: center;
       }
       ::placeholder {
         text-align: center;
       }
       table {
-        width: 100%;
+        width: 5%;
         border-collapse: collapse;
         margin-bottom: 20px;
       }
@@ -245,7 +261,7 @@ a{
         font-size: large;
         color: white;
         font-weight: bolder;
-        margin-left: 280px;
+        /* margin-left: 2px; */
       }
       .text {
         /* margin-top: 300px; */
@@ -259,17 +275,18 @@ a{
         /* height: 200px; */
         /* padding: 20px; */
         /* text-align: center; */
-        margin-left: 100px;
+        margin-left: 50px;
+        width: 80%;
       }
       #logo{
         width: 200px;
         height: 130px;
-        margin-top: -90px;
+        margin-top: 50px;
         margin-left: 60px;
       }
       .logo {
         margin-top: 100px;
-        margin-top: 80px;
+        margin-top: 180px;
         margin-left: 0px;
       }
       
@@ -288,22 +305,40 @@ a{
         margin-left: 0px;
       } 
       #btn{
-        width: 200px;
+        width: 150px;
         height: 50px;
-        margin-top: 200px;
-      }
+        /* margin-top: 300px; */
+       text-align: center;
+       margin-left: 100px; 
+       margin-top: 400px;    
+ }
+
+#calculateArea{
+  width: 100%;
+  height: 500px;
+}
+
 }
 @media screen and (min-width:481px) and (max-width:680px){
-    body {
-        background-image: url("images/_____BACKGROUND.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 610px;
-        width: 90%;
-      }
+  body {
+    background-image: url("/images/pancakesandStrawberries.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 703px;
+    background-position: center;
+    /* background-color: rgba(112, 90, 90, 0.2); */
+  }
+   
+
+
+
+  
    
       #content {
-        background-color: #d48e3e;
+
+        
+        /* background-color: #d48e3e; */
         /* height: 850px; 
               width: 900px;  */
         border-radius: 60px;
@@ -311,44 +346,48 @@ a{
         position: absolute;
         z-index: 2;
         padding: 10px 70px;
-        margin: 30px 400px;
+        margin: 0px 0px;
         display: flex;
         flex-direction: column;
-        width: 900px;
-        height: 850px;
+        width: 50%;
+        height: 700px;
       }
       .header {
         display: flex;
         gap: 100px;
       }
       textarea {
-        margin-left: 150px;
+        margin-left: 220px;
         border: solid 2px;
         border-radius: 20px;
+        width: 150%;
+        height: 100%;
+        margin-top: 90px;
       }
       h1 {
-        font-size: 40px;
-        margin-top: 6%;
+        font-size: xx-large;
+        margin-top: 10%;
+        margin-left: 160px;
       }
       button {
         border-radius: 30px;
-        font-size: small;
-        margin-top: 0px;
+        font-size: 20px;
+        margin-left: 150px;
         text-align: center;
         background-color: #94503d;
         color: white;
         border: none;
         padding: 0px 0px;
         width: 200px;
-        margin-top: 400px;
-        height: 50px;
+        margin-top: 150px;
+        height: 20px;
         align-self: center;
       }
       ::placeholder {
         text-align: center;
       }
       table {
-        width: 100%;
+        width: 5%;
         border-collapse: collapse;
         margin-bottom: 20px;
       }
@@ -379,7 +418,7 @@ a{
         font-size: large;
         color: white;
         font-weight: bolder;
-        margin-left: 280px;
+        /* margin-left: 2px; */
       }
       .text {
         /* margin-top: 300px; */
@@ -393,17 +432,18 @@ a{
         /* height: 200px; */
         /* padding: 20px; */
         /* text-align: center; */
-        margin-left: 100px;
+        margin-left: 50px;
+        width: 80%;
       }
       #logo{
         width: 200px;
         height: 130px;
-        margin-top: -90px;
+        margin-top: 50px;
         margin-left: 60px;
       }
       .logo {
         margin-top: 100px;
-        margin-top: 80px;
+        margin-top: 180px;
         margin-left: 0px;
       }
       
@@ -422,8 +462,504 @@ a{
         margin-left: 0px;
       } 
       #btn{
+        width: 150px;
+        height: 50px;
+        /* margin-top: 300px; */
+       text-align: center;
+       margin-left: 100px; 
+       margin-top: 400px;    
+ }
+
+#calculateArea{
+  width: 100%;
+  height: 500px;
+}
+    
+}
+@media screen and (min-width:681px) and (max-width:880px){
+
+  body {
+    background-image: url("/images/pancakesandStrawberries.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 1000px;
+    background-position: center;
+    /* background-color: rgba(112, 90, 90, 0.2); */
+  }
+   
+
+
+
+  
+   
+      #content {
+
+        
+        /* background-color: #d48e3e; */
+        /* height: 850px; 
+              width: 900px;  */
+        border-radius: 60px;
+        margin-top: 1.5%;
+        position: absolute;
+        z-index: 2;
+        padding: 10px 70px;
+        margin: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 700px;
+      }
+      .header {
+        display: flex;
+        gap: 100px;
+      }
+      textarea {
+        margin-left: 0px;
+        border: solid 2px;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+
+      }
+      h1 {
+        font-size: 40px;
+        margin-top: 6%;
+      }
+      button {
+        border-radius: 30px;
+        font-size: xxx-large;
+        margin-top: 0px;
+        text-align: center;
+        background-color: #94503d;
+        color: white;
+        border: none;
+        padding: 0px 0px;
+        width: 250px;
+        margin-top: 200px;
+        height: 90px;
+        align-self: center;
+      }
+      ::placeholder {
+        text-align: center;
+      }
+      table {
+        width: 5%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      #result {
+        flex: 1;
+        overflow: auto;
+      }
+      
+      .container {
+        /* display: block; */
+        /* justify-content: center; */
+        /* flex-direction: row; */
+      }
+      .text span {
+        color: #f6a224;
+      }
+      
+      .text p {
+        font-size: large;
+        color: white;
+        font-weight: bolder;
+        /* margin-left: 2px; */
+      }
+      .text {
+        /* margin-top: 300px; */
+        /* background-color: rgba(0, 0, 0, 0.4); */
+        /* color: white; */
+        /* font-weight: bold; */
+        /* position: absolute; */
+        /* transform: translate(-60%, -25%); */
+        /* z-index: 2; */
+        /* width: 400px; */
+        /* height: 200px; */
+        /* padding: 20px; */
+        /* text-align: center; */
+        margin-left: 50px;
+        width: 80%;
+      }
+      #logo{
+        width: 200px;
+        height: 130px;
+        margin-top: 50px;
+        margin-left: 60px;
+      }
+      .logo {
+        margin-top: 100px;
+        margin-top: 180px;
+        margin-left: 0px;
+      }
+      
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-align: start;
         width: 200px;
         height: 50px;
-        margin-top: 200px;
-      }
+        padding: 0px 0px;
+        background-color: #94503d;
+        border: none;
+        font-size:-large;
+        border-radius: 20px;
+        margin-left: 0px;
+      } 
+      #btn{
+        width: 150px;
+        height: 50px;
+        /* margin-top: 300px; */
+       text-align: center;
+       margin-left: 100px; 
+       margin-top: 400px;    
+ }
+
+#calculateArea{
+  width: 100%;
+  height: 500px;
 }
+
+}
+
+
+
+
+@media screen and (min-width:881px) and (max-width:1024px){
+
+  body {
+    background-image: url("/images/pancakesandStrawberries.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 500px;
+    background-position: center;
+    /* background-color: rgba(112, 90, 90, 0.2); */
+  }
+   
+
+
+
+  
+   
+      #content {
+
+        
+        /* background-color: #d48e3e; */
+        /* height: 850px; 
+              width: 900px;  */
+        border-radius: 60px;
+        margin-top: 1.5%;
+        position: absolute;
+        z-index: 2;
+        padding: 10px 70px;
+        margin: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 600px;
+      }
+      .header {
+        display: flex;
+        gap: 100px;
+      }
+      textarea {
+        margin-left: 350px;
+        border: solid 2px;
+        border-radius: 20px;
+        width: 170%;
+        height: 100%;
+        margin-top: -25px;
+      }
+      h1 {
+        font-size: 40px;
+        margin-top: 10%;
+        margin-left: 300px;
+      }
+      button {
+        border-radius: 30px;
+        font-size: 30px;
+        margin-left: 400px;
+        text-align: center;
+        background-color: #94503d;
+        color: white;
+        border: none;
+        padding: 0px 0px;
+        width: 300px;
+        margin-top: -8px;
+        height: 70px;
+        align-self: center;
+      }
+      ::placeholder {
+        text-align: center;
+      }
+      table {
+        width: 5%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      #result {
+        flex: 1;
+        overflow: auto;
+      }
+      
+      .container {
+        /* display: block; */
+        /* justify-content: center; */
+        /* flex-direction: row; */
+      }
+      .text span {
+        color: #f6a224;
+      }
+      
+      .text p {
+        font-size: large;
+        color: white;
+        font-weight: bolder;
+        /* margin-left: 2px; */
+      }
+      .text {
+        /* margin-top: 300px; */
+        /* background-color: rgba(0, 0, 0, 0.4); */
+        /* color: white; */
+        /* font-weight: bold; */
+        /* position: absolute; */
+        /* transform: translate(-60%, -25%); */
+        /* z-index: 2; */
+        /* width: 400px; */
+        /* height: 200px; */
+        /* padding: 20px; */
+        /* text-align: center; */
+        margin-left: 50px;
+        width: 80%;
+      }
+      #logo{
+        width: 200px;
+        height: 130px;
+        margin-top: 50px;
+        margin-left: 60px;
+      }
+      .logo {
+        margin-top: 100px;
+        margin-top: 180px;
+        margin-left: 0px;
+      }
+      
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-align: start;
+        width: 200px;
+        height: 50px;
+        padding: 0px 0px;
+        background-color: #94503d;
+        border: none;
+        font-size:-large;
+        border-radius: 20px;
+        margin-left: 0px;
+      } 
+      #btn{
+        width: 150px;
+        height: 50px;
+        /* margin-top: 300px; */
+       text-align: center;
+       margin-left: 100px; 
+       margin-top: 400px;    
+ }
+
+#calculateArea{
+  width: 100%;
+  height: 500px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1025px) and (max-width:1300px){
+
+  body {
+    background-image: url("/images/pancakesandStrawberries.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 500px;
+    background-position: center;
+    /* background-color: rgba(112, 90, 90, 0.2); */
+  }
+   
+
+
+
+  
+   
+      #content {
+
+        
+        /* background-color: #d48e3e; */
+        /* height: 850px; 
+              width: 900px;  */
+        border-radius: 60px;
+        margin-top: 1.5%;
+        position: absolute;
+        z-index: 2;
+        padding: 10px 70px;
+        margin: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 700px;
+      }
+      .header {
+        display: flex;
+        gap: 100px;
+      }
+      textarea {
+        margin-left: 550px;
+        border: solid 2px;
+        border-radius: 20px;
+        width: 150%;
+        height: 100%;
+        margin-top: 100px;
+      }
+      h1 {
+        font-size: 50px;
+        margin-top: 10%;
+        margin-left: 470px;
+      }
+      button {
+        border-radius: 30px;
+        font-size: 50px;
+        margin-left: 500px;
+        text-align: center;
+        background-color: #94503d;
+        color: white;
+        border: none;
+        padding: 0px 0px;
+        width: 290px;
+        /* margin-top: 350px; */
+        height: 90px;
+        align-self: center;
+      }
+      ::placeholder {
+        text-align: center;
+      }
+      table {
+        width: 5%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      #result {
+        flex: 1;
+        overflow: auto;
+      }
+      
+      .container {
+        /* display: block; */
+        /* justify-content: center; */
+        /* flex-direction: row; */
+      }
+      .text span {
+        color: #f6a224;
+      }
+      
+      .text p {
+        font-size: large;
+        color: white;
+        font-weight: bolder;
+        /* margin-left: 2px; */
+      }
+      .text {
+        /* margin-top: 300px; */
+        /* background-color: rgba(0, 0, 0, 0.4); */
+        /* color: white; */
+        /* font-weight: bold; */
+        /* position: absolute; */
+        /* transform: translate(-60%, -25%); */
+        /* z-index: 2; */
+        /* width: 400px; */
+        /* height: 200px; */
+        /* padding: 20px; */
+        /* text-align: center; */
+        margin-left: 50px;
+        width: 80%;
+      }
+      #logo{
+        width: 200px;
+        height: 130px;
+        margin-top: 50px;
+        margin-left: 60px;
+      }
+      .logo {
+        margin-top: 100px;
+        margin-top: 180px;
+        margin-left: 0px;
+      }
+      
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-align: start;
+        width: 200px;
+        height: 50px;
+        padding: 0px 0px;
+        background-color: #94503d;
+        border: none;
+        font-size:-large;
+        border-radius: 20px;
+        margin-left: 0px;
+      } 
+      #btn{
+        width: 150px;
+        height: 50px;
+        /* margin-top: 300px; */
+       text-align: center;
+       margin-left: 100px; 
+       margin-top: 400px;    
+ }
+
+#calculateArea{
+  width: 100%;
+  height: 500px;
+}
+
+}
+

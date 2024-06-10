@@ -1,26 +1,54 @@
 body {
-  background-image: url("/images/pancakesandStrawberries.avif");
+  /* background-image: url("/images/pancakesandStrawberries.avif"); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  
+  
+}
+/* .background-image{
+  object-fit: cover;
+  overflow:auto; 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  /* background-color: rgba(112, 90, 90, 0.2); */
+  height: 866px;
+  margin-bottom: -10px;
+  position: relative;
+  opacity: 0.5;
+} */
+.photo{
+  height: 98vh;
+  width: 99vw;
+  /* margin-top: 100px; */
+  opacity: 0.6;
+  position: relative;
+  object-fit: cover;
+  /* background-size: cover; */
+}
+.texts{
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%,-50%);
+  margin-top: 20px;
 }
 
 #content {
   /* background-color: #d48e3e; */
-  /* height: 850px; 
-        width: 900px;  */
+   height: 850px; 
+        width: 900px;  
   border-radius: 60px;
-  margin-top: 1.5%;
+  /* margin-top: 1.5%; */
   position: absolute;
   z-index: 2;
-  padding: 10px 70px;
-  margin: 30px 400px;
+  /* padding: 10px 70px; */
+  /* margin: 30px 400px; */
   display: flex;
   flex-direction: column;
   width: 900px;
   height: 850px;
   border-color: transparent;
+
 }
 /* .header {
   display: flex;
@@ -43,7 +71,8 @@ h1 {
   font-family: monospace;
   text-align: center;
   color: #380A14;
-  background-color: rgba(255, 253, 253, 0.4);
+  font-weight: 950;
+  /* background-color: rgba(255, 253, 253, 0.4); */
 
 }
 button {
@@ -55,9 +84,12 @@ button {
   color: white;
   border: none;
   padding: 15px 0px;
-  width: 18%;
-  align-self: center;
+  width: 38%;
+  /* align-self: center; */
   font-family: monospace;
+  font-weight: 600;
+  align-self: center;
+  margin-left: 150px;
 }
 ::placeholder {
   text-align: center;
@@ -88,6 +120,7 @@ th {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
   margin-top: 5%;
+  width: 120%;
 
 }
 

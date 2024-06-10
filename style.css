@@ -150,12 +150,12 @@ h2 , h3{
   flex-direction: row;
 }
 .text span {
-  color: #f6a224;
+  color: #0f0a01;
 }
 
 .text p {
   font-size: xx-large;
-  color: white;
+  color: rgb(149, 35, 35);
   font-weight: bolder;
 }
 .text {
@@ -166,8 +166,8 @@ h2 , h3{
   position: absolute;
   transform: translate(-5%, -25%);
   z-index: 2;
-  width: 400px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
   padding: 20px;
   text-align: center;
   

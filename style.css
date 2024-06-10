@@ -1,11 +1,11 @@
-body {
+/* body { */
   /* background-image: url("/images/pancakesandStrawberries.avif"); */
   /* background-repeat: no-repeat;
   background-size: cover;
   background-position: center; */
   
   
-}
+/* } */
 /* .background-image{
   object-fit: cover;
   overflow:auto; 
@@ -20,20 +20,21 @@ body {
   height: 98vh;
   width: 99vw;
   /* margin-top: 100px; */
-  opacity: 0.6;
+  opacity: 0.3;
   position: relative;
   object-fit: cover;
   /* background-size: cover; */
 }
 .texts{
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 100%;
   transform: translate(-50%,-50%);
   margin-top: 20px;
 }
 
 #content {
+  /* border-radius: 80px; */
   /* background-color: #d48e3e; */
    height: 850px; 
         width: 900px;  
@@ -54,7 +55,7 @@ body {
   display: flex;
   gap: 100px;
 } */
-textarea {
+#recipeInput{
   /* margin-left: 150px; */
   border: solid 2px;
   border-radius: 20px;
@@ -63,14 +64,18 @@ textarea {
   color: white;
   border-color: transparent;
   align-self: center;
-  font-size: large;
+  font-size: x-large;
+  font-weight: bolder;
 }
-h1 {
+#recipe{
+  padding-top: 20px;
   font-size: 40px;
-  margin-top: 6%;
+  margin-top: 60%;
+  width: 500px;
   font-family: monospace;
   text-align: center;
-  color: #380A14;
+  color: rgb(59, 51, 59);
+  /* color: #380A14; */
   font-weight: 950;
   /* background-color: rgba(255, 253, 253, 0.4); */
 
@@ -78,9 +83,10 @@ h1 {
 button {
   border-radius: 30px;
   font-size: 25px;
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
-  background-color: #003556;
+  background-color: purple;
+  /* background-color: #003556; */
   color: white;
   border: none;
   padding: 15px 0px;
@@ -94,7 +100,8 @@ button {
 ::placeholder {
   text-align: center;
   color: white;
-  font-size: large;
+  font-size: x-large;
+  font-weight: bolder;
 }
 table {
   width: 100%;
@@ -107,10 +114,12 @@ td {
   text-align: left;
   border-bottom: 1px solid #ddd;
   background-color: transparent;
-  color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
 }
 th {
-  background-color: #f2f2f2;
+  background-color: purple;
   
   /* background-color: rgba(0, 0, 0, 0.4); */
 
@@ -120,10 +129,21 @@ th {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
   margin-top: 5%;
-  width: 120%;
-
+  width: 180%;
+  height: 300px;
+  border-radius: 50px;
+  margin-top: 0px;
+  padding: 10px 60px 100px;
+  margin-left: -250px;
+  
 }
-
+h2 , h3{
+  font-weight: bolder;
+  font-size: 30px;
+}
+#calculateButton{
+  /* margin-top: 50px; */
+}
 .container {
   display: flex;
   justify-content: center;
@@ -192,6 +212,170 @@ a{
     align-self: center;
 
 }
+
+
+
+@media screen and (min-width:280px) and (max-width:480px){
+
+  body {
+    background-image: url("/images/pancakesandStrawberries.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 650px;
+    background-position: center;
+    /* background-color: rgba(112, 90, 90, 0.2); */
+  }
+   
+
+
+
+  
+   
+      #content {
+
+        
+        /* background-color: #d48e3e; */
+        /* height: 850px; 
+              width: 900px;  */
+        border-radius: 60px;
+        margin-top: 1.5%;
+        position: absolute;
+        z-index: 2;
+        padding: 10px 70px;
+        margin: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 700px;
+      }
+      .header {
+        display: flex;
+        gap: 100px;
+      }
+      textarea {
+        margin-left: 0px;
+        border: solid 2px;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+
+      }
+      h1 {
+        font-size: 40px;
+        margin-top: 6%;
+      }
+      button {
+        border-radius: 30px;
+        font-size: large;
+        margin-top: 0px;
+        text-align: center;
+        background-color: #94503d;
+        color: white;
+        border: none;
+        padding: 0px 0px;
+        width: 200px;
+        margin-top: 200px;
+        height: 90px;
+        align-self: center;
+      }
+      ::placeholder {
+        text-align: center;
+      }
+      table {
+        width: 5%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      #result {
+        flex: 1;
+        overflow: auto;
+      }
+      
+      .container {
+        /* display: block; */
+        /* justify-content: center; */
+        /* flex-direction: row; */
+      }
+      .text span {
+        color: #f6a224;
+      }
+      
+      .text p {
+        font-size: large;
+        color: white;
+        font-weight: bolder;
+        /* margin-left: 2px; */
+      }
+      .text {
+        /* margin-top: 300px; */
+        /* background-color: rgba(0, 0, 0, 0.4); */
+        /* color: white; */
+        /* font-weight: bold; */
+        /* position: absolute; */
+        /* transform: translate(-60%, -25%); */
+        /* z-index: 2; */
+        /* width: 400px; */
+        /* height: 200px; */
+        /* padding: 20px; */
+        /* text-align: center; */
+        margin-left: 50px;
+        width: 80%;
+      }
+      #logo{
+        width: 200px;
+        height: 130px;
+        margin-top: 50px;
+        margin-left: 60px;
+      }
+      .logo {
+        margin-top: 100px;
+        margin-top: 180px;
+        margin-left: 0px;
+      }
+      
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-align: start;
+        width: 200px;
+        height: 50px;
+        padding: 0px 0px;
+        background-color: #94503d;
+        border: none;
+        font-size:-large;
+        border-radius: 20px;
+        margin-left: 0px;
+      } 
+      #btn{
+        width: 150px;
+        height: 50px;
+        /* margin-top: 300px; */
+       text-align: center;
+       margin-left: 100px; 
+       margin-top: 400px;    
+ }
+
+#calculateArea{
+  width: 100%;
+  height: 500px;
+}
+
+
+
+
+
+
 
 
 

@@ -80,10 +80,11 @@ function generateNutrientTable(nutrients) {
         </tr>
     `).join('');
 }
+
 function adjustHeight() {
     var content1 = document.getElementById("content");
     var result1 = document.getElementById("result");
-    var additionalHeight = 400;
+    var additionalHeight = 500;
     var contentHeight = result1.offsetHeight;
     content1.style.height = (contentHeight + additionalHeight) + 'px';
 }

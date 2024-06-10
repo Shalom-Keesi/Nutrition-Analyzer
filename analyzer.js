@@ -10,37 +10,28 @@ async function calculateNutrition() {
         totalNutrients: {},
         totalDaily: {}
     };
-    for (let ingredient of ingredientLines) {
-        try {
-            const response = await fetch(`https://api.edamam.com/api/nutrition-data?app_id=${EDAMAM_APP_ID}&app_key=${EDAMAM_APP_KEY}&ingr=${encodeURIComponent(ingredient)}`);
+    try {
+        const requests = ingredientLines.map(ingredient => fetch(`https://api.edamam.com/api/nutrition-data?app_id=${EDAMAM_APP_ID}&app_key=${EDAMAM_APP_KEY}&ingr=${encodeURIComponent(ingredient)}`));
+        const responses = await Promise.all(requests);
+        for (const response of responses) {
             const data = await response.json();
             if (data.calories) {
                 totalNutrition.calories += data.calories;
                 totalNutrition.totalWeight += data.totalWeight;
-                for (let key in data.totalNutrients) {
-                    if (totalNutrition.totalNutrients[key]) {
-                        totalNutrition.totalNutrients[key].quantity += data.totalNutrients[key].quantity;
-                    } else {
-                        totalNutrition.totalNutrients[key] = data.totalNutrients[key];
-                    }
-                }
-                for (let key in data.totalDaily) {
-                    if (totalNutrition.totalDaily[key]) {
-                        totalNutrition.totalDaily[key].quantity += data.totalDaily[key].quantity;
-                    } else {
-                        totalNutrition.totalDaily[key] = data.totalDaily[key];
-                    }
-                }
+                
+                totalNutrition.totalNutrients = {...totalNutrition.totalNutrients, ...data.totalNutrients};
+                totalNutrition.totalDaily = {...totalNutrition.totalDaily, ...data.totalDaily};
             }
-        } catch (error) {
-            console.error('Error fetching data:', error);
         }
+    } catch (error) {
+        console.error('Error fetching data:', error);
     }
+    console.log({totalNutrition});
     displayNutrition(totalNutrition);
 }
 function displayNutrition(nutrition) {
     const resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = `
+    const html = `
         <h2>Total Nutritional Information</h2>
         <table border="1">
             <tr>
@@ -78,6 +69,7 @@ function displayNutrition(nutrition) {
             ${generateNutrientTable(nutrition.totalDaily)}
         </table>
     `;
+    resultDiv.innerHTML = html;
 }
 function generateNutrientTable(nutrients) {
     return Object.keys(nutrients).map(key => `
@@ -92,10 +84,9 @@ function generateNutrientTable(nutrients) {
 function adjustHeight() {
     var content1 = document.getElementById("content");
     var result1 = document.getElementById("result");
-    var additionalHeight = 400;
+    var additionalHeight = 500;
     var contentHeight = result1.offsetHeight;
     content1.style.height = (contentHeight + additionalHeight) + 'px';
 }
-
 window.onload = adjustHeight;
 window.onresize = adjustHeight;

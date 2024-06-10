@@ -1,29 +1,9 @@
-/* body { */
-  /* background-image: url("/images/pancakesandStrawberries.avif"); */
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
-  
-  
-/* } */
-/* .background-image{
-  object-fit: cover;
-  overflow:auto; 
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 866px;
-  margin-bottom: -10px;
-  position: relative;
-  opacity: 0.5;
-} */
 .photo{
   height: 98vh;
   width: 99vw;
-  /* margin-top: 100px; */
   opacity: 0.3;
   position: relative;
   object-fit: cover;
-  /* background-size: cover; */
 }
 .texts{
   position: absolute;
@@ -31,19 +11,15 @@
   left: 100%;
   transform: translate(-50%,-50%);
   margin-top: 20px;
+  color: white;
 }
 
 #content {
-  /* border-radius: 80px; */
-  /* background-color: #d48e3e; */
    height: 850px; 
         width: 900px;  
   border-radius: 60px;
-  /* margin-top: 1.5%; */
   position: absolute;
   z-index: 2;
-  /* padding: 10px 70px; */
-  /* margin: 30px 400px; */
   display: flex;
   flex-direction: column;
   width: 900px;
@@ -51,15 +27,10 @@
   border-color: transparent;
 
 }
-/* .header {
-  display: flex;
-  gap: 100px;
-} */
+
 #recipeInput{
-  /* margin-left: 150px; */
   border: solid 2px;
   border-radius: 20px;
-  /* opacity: 0.3; */
   background-color: rgba(68, 57, 57, 0.4);
   color: white;
   border-color: transparent;
@@ -75,27 +46,23 @@
   font-family: monospace;
   text-align: center;
   color: rgb(59, 51, 59);
-  /* color: #380A14; */
   font-weight: 950;
-  /* background-color: rgba(255, 253, 253, 0.4); */
 
 }
 button {
   border-radius: 30px;
   font-size: 25px;
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
-  background-color: purple;
-  /* background-color: #003556; */
+  background-color: rgb(149, 35, 35);
   color: white;
   border: none;
-  padding: 15px 0px;
-  width: 38%;
-  /* align-self: center; */
+  padding: 15px 10px;
+  width: 40%;
   font-family: monospace;
   font-weight: 600;
   align-self: center;
-  margin-left: 150px;
+  margin-left: 0px;
 }
 ::placeholder {
   text-align: center;
@@ -119,7 +86,7 @@ td {
   font-weight: bold;
 }
 th {
-  background-color: purple;
+  background-color: rgb(149, 35, 35);
   
   /* background-color: rgba(0, 0, 0, 0.4); */
 
@@ -142,7 +109,8 @@ h2 , h3{
   font-size: 30px;
 }
 #calculateButton{
-  /* margin-top: 50px; */
+   margin-bottom: 20px;
+  margin-left: 200px;
 }
 .container {
   display: flex;
@@ -151,12 +119,15 @@ h2 , h3{
 }
 .text span {
   color: #0f0a01;
+  margin-top: 0px;
 }
 
 .text p {
   font-size: xx-large;
   color: rgb(149, 35, 35);
   font-weight: bolder;
+  margin-top: 0px;
+
 }
 .text {
   margin-top: 300px;
@@ -166,8 +137,8 @@ h2 , h3{
   position: absolute;
   transform: translate(-5%, -25%);
   z-index: 2;
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 400px;
   padding: 20px;
   text-align: center;
   
@@ -183,28 +154,8 @@ tr{
   
 }
 
-/* a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  /* width: 200px; */
-  /* height: 50px; */
-  /* padding: 18px 10px; */
-  /* background-color: #94503d; */
-  /* border: none; */
-  /* font-size: 20px; */
-  /* border-radius: 20px; */
-  /* margin-left: 800px; */
-/* } */ 
-#btn{
-    /* justify-content: center; */
-    margin-top: 600px;
-    margin-left: 750px;
-    
-    
-    
-}
+
+
 
 a{
     text-decoration: none;
@@ -371,7 +322,7 @@ a{
   height: 500px;
 }
 
-
+}
 
 
 

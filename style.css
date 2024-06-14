@@ -1,9 +1,25 @@
 #myphoto{
-  height: 98vh;
-  width: 99vw;
-  opacity: 0.4;
+  max-height: 97.7vh;
+  width: 100vw;
+  /* opacity: 0.8; */
   position: relative;
   object-fit: cover;
+  object-position: center;
+  /* filter: grayscale(50%); */
+}
+.text {
+  margin-top: 300px;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  transform: translate(-5%, -25%);
+  z-index: 2;
+  width: 600px;
+  height: 400px;
+  padding: 20px;
+  text-align: center;
+  
 }
 
 .photo{
@@ -23,8 +39,8 @@
 }
 
 #content {
-   height: 850px; 
-        width: 900px;  
+  height: 850px; 
+  width: 900px;  
   border-radius: 60px;
   position: absolute;
   z-index: 2;
@@ -126,31 +142,18 @@ h2 , h3{
   flex-direction: row;
 }
 .text span {
-  color: #0f0a01;
+  color: orange;
   margin-top: 0px;
 }
 
 .text p {
   font-size: xx-large;
-  color: rgb(149, 35, 35);
+  color: white;
   font-weight: bolder;
   margin-top: 0px;
 
 }
-.text {
-  margin-top: 300px;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-  font-weight: bold;
-  position: absolute;
-  transform: translate(-5%, -25%);
-  z-index: 2;
-  width: 600px;
-  height: 400px;
-  padding: 20px;
-  text-align: center;
-  
-}
+
 tr{
     color: black;
 }

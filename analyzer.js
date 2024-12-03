@@ -1,6 +1,20 @@
 document.getElementById('calculateButton').addEventListener('click', calculateNutrition);
 async function calculateNutrition() {
     const recipe = document.getElementById('recipeInput').value;
+    const resultDiv = document.getElementById('result');
+
+    if (recipeInput=== ""){
+        resultDiv.style.display = "none";
+        alert("Please enter some ingredients to analyze.");
+        return;
+    }
+
+    resultDiv.style.display = "block";
+    resultDiv.textContent = " Calculating...Please wait.";
+
+
+
+
     const ingredientLines = recipe.split('\n').filter(line => line.trim() !== '');
     const EDAMAM_APP_ID = '593f0f9e';
     const EDAMAM_APP_KEY = 'feb482379fded74fdc0a485f439a30ae';
@@ -13,8 +27,15 @@ async function calculateNutrition() {
     try {
         const requests = ingredientLines.map(ingredient => fetch(`https://api.edamam.com/api/nutrition-data?app_id=${EDAMAM_APP_ID}&app_key=${EDAMAM_APP_KEY}&ingr=${encodeURIComponent(ingredient)}`));
         const responses = await Promise.all(requests);
+
         for (const response of responses) {
+            if (!response.ok){
+                console.error("Error with response:", response.statusText);
+                continue;
+            }
             const data = await response.json();
+            console.log("API response data: ",data);
+            
             if (data.calories) {
                 totalNutrition.calories += data.calories;
                 totalNutrition.totalWeight += data.totalWeight;
@@ -25,6 +46,8 @@ async function calculateNutrition() {
         }
     } catch (error) {
         console.error('Error fetching data:', error);
+        resultDiv.textContent = "An error occurred while processing the data. Please try again.";
+        return;
     }
     console.log({totalNutrition});
     displayNutrition(totalNutrition);

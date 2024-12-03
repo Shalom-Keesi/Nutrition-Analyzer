@@ -35,7 +35,7 @@ textarea {
   color: white;
   border-color: transparent;
   align-self: center;
-  font-size: large;
+  font-size: larger;
 }
 h1 {
   font-size: 40px;
@@ -88,6 +88,7 @@ th {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
   margin-top: 5%;
+  display: none;
 
 }
 
@@ -97,7 +98,7 @@ th {
   flex-direction: row;
 }
 .text span {
-  color: #f6a224;
+  color: #003556;
 }
 
 .text p {
@@ -147,10 +148,11 @@ tr{
 #btn{
     /* justify-content: center; */
     margin-top: 600px;
-    margin-left: 750px;
-    
-    
-    
+    margin-left: 750px;  
+}
+#calculateButton{
+width: 200px;
+cursor: pointer;
 }
 
 a{
